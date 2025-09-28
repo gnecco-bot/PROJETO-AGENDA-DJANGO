@@ -42,6 +42,11 @@
     "python.testing.pytestEnabled": true,
     "python.analysis.diagnosticSeverityOverrides": {},
     // "python.defaultInterpreterPath": "./venv/bin/python",
-    "python.analysis.typeCheckingMode": "off",
-    "cSpell.enabled": false
+    "python.analysis.typeCheckingMode": "basic",
+    "cSpell.enabled": false,
+
+    // Opcional, mas útil: Força a busca de arquivos no ambiente virtual
+    "python.analysis.extraPaths": [
+        "./venv/lib/site-packages" // Ajuste o caminho se seu venv for diferente
+    ]
   }
