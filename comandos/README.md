@@ -20,4 +20,17 @@ git add .
 git commit -m 'Mensagem'
 git remote add origin URL_DO_GIT
 ```
-teste de atualização do git
+
+Migrando a base de dados do Django
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Criando e modificando a senha de um super usuário Django
+
+```
+python manage.py createsuperuser
+python manage.py changepassword USERNAME
+```
