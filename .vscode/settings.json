@@ -42,7 +42,7 @@
     "python.testing.pytestEnabled": true,
     "python.analysis.diagnosticSeverityOverrides": {},
     // "python.defaultInterpreterPath": "./venv/bin/python",
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "basic", // checagem de tipagem
     "cSpell.enabled": false,
 
     // Opcional, mas útil: Força a busca de arquivos no ambiente virtual
