@@ -1,6 +1,7 @@
 {% extends "global/base.html" %}
 
 {% block content %}
+<div class="form-wrapper">
     <h2> Contact </h2>
     
     <form 
@@ -18,6 +19,10 @@
           <label for="{{ field.id_for_label }}">{{ field.label }}</label>
           {{ field }}
           {{ field.errors }}
+
+          {% if field.help_text %}
+          <p class="help-text"> {{ field.help_text }} </p>
+          {% endif %}
 
         </div>
        {% endfor %} 
