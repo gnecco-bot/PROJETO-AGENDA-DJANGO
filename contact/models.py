@@ -6,8 +6,6 @@ from django.contrib.auth.models import User
 # first_name (string), last_name (string), phone (string)
 # email (email), created_date (date), description (text)
 # category (foreign key), show (boolean), picture (imagem)
-
-# depois
 # owner (foreign key)
 
 class Category(models.Model):
@@ -27,7 +25,7 @@ class Contact(models.Model):
     email = models.EmailField(max_length=254, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
-    show = models.BooleanField(default=True) # Visibilidade do contato (na amd exibe)
+    show = models.BooleanField(default=True) # Visibilidade do contato (na adm exibe)
     picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m/%d')
     category = models.ForeignKey(
         Category, 
