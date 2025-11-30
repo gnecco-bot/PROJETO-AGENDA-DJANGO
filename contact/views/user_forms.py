@@ -41,20 +41,14 @@ def user_update(request):
     if not form.is_valid():
         return render(
             request,
-            'contact/register.html',
+            'contact/user_update.html',
             {   
                 'form': form,
             }
     )
 
     form.save()
-    return render(
-        request,
-        'contact/register.html',
-        {   
-            'form': form,
-        }
-    )
+    return redirect('contact:user_update')
 
 
 def login_view(request):
