@@ -32,7 +32,7 @@ def user_update(request):
     if request.method != 'POST':
         return render(
             request,
-            'contact/register.html',
+            'contact/user_update.html',
             {   
                 'form': form,
             }

@@ -54,6 +54,12 @@ svg {
   max-width: 100%;
 }
 
+.img-contact {
+  width: 500px;
+  height: auto;
+  margin: auto;
+}
+
 .header {
   background: var(--clr-black);
   padding: var(--spacing);
